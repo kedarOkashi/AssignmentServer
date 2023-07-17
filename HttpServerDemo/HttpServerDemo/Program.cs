@@ -23,8 +23,10 @@ namespace HttpServerDemo
            Host.CreateDefaultBuilder(args)
                .ConfigureServices((hostContext, services) =>
                {
+                   services.AddHostedService<PrintSomething>();
                    services.AddHostedService<UserBatchService>();
                    services.AddHostedService<RunServer>();
+                   
                });
     }
 

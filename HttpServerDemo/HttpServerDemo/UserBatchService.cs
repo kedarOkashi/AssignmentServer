@@ -47,7 +47,7 @@ namespace HttpServerDemo
                         }
                         await Task.Delay(60000, stoppingToken);
                     }
-
+                    Console.WriteLine("this is no time to send emails!");
                     await Task.Delay(1000, stoppingToken);
                 }
                 catch (Exception ex)
